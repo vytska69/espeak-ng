@@ -976,7 +976,8 @@ PHSOURCE_MBROLA = \
 
 mbrola: \
 	$(patsubst phsource/mbrola/%,espeak-ng-data/mbrola_ph/%_phtrans,$(PHSOURCE_MBROLA))
-
+espeak-ng-data/mbrola_ph/lt1_phtrans \
+espeak-ng-data/mbrola_ph/lt2_phtrans \
 espeak-ng-data/mbrola_ph/%_phtrans: phsource/mbrola/% src/espeak-ng
 	mkdir -p espeak-ng-data/mbrola_ph
 	ESPEAK_DATA_PATH=$(CURDIR) src/espeak-ng --compile-mbrola=phsource/mbrola/$*
