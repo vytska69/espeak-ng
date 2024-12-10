@@ -120,6 +120,7 @@ public class VoiceVariantPreference extends DialogPreference {
         R.string.variant_female,
         R.string.variant_klatt,
         R.string.variant_nvda,
+                R.string.variant_mbrola,
         R.string.variant_young,
         R.string.variant_old,
         R.string.variant_croak,
@@ -151,7 +152,10 @@ public class VoiceVariantPreference extends DialogPreference {
             new VariantData(R.string.variant_n, 4, "klatt4"),
             new VariantData(R.string.variant_n, 5, "klatt5"),
             new VariantData(R.string.variant_n, 6, "klatt6"),
-        },{ // NVDA
+           },{ // mbrola
+            new VariantData(R.string.variant_n, 1, "lt1"),
+            new VariantData(R.string.variant_n, 2, "lt2"),
+                    },{ // NVDA
             new VariantData(R.string.variant_adam, "adam"),
             new VariantData(R.string.variant_alex, "Alex"),
             new VariantData(R.string.variant_alicia, "Alicia"),
