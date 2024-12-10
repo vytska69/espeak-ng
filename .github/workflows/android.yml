@@ -31,7 +31,7 @@ jobs:
           java-version: 17
           cache: gradle
       - name: make
-        run: cd android && ./gradlew ${{ matrix.target }} --no-daemon
+        run: cd android && ./gradlew ${{ matrix.target }} --no-daemon --with-mbrola
       - name: upload
         uses: actions/upload-artifact@v4
         with:
